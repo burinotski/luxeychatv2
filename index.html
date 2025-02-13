@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxePrints PH</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-section {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #ccc;
+        }
+
+        .left-top {
+            height: 50%;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .left-bottom {
+            height: 50%;
+            padding: 10px;
+        }
+
+        .middle-section {
+            width: 400px; /* Changed from flex: 1 to fixed width */
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+        }
+
+        .chat-area {
+            flex: 1;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 10px;
+            overflow-y: auto;
+        }
+
+        .chat-input-area {
+            display: flex;
+            gap: 10px;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .send-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .right-section {
+            flex: 1; /* Changed to flex: 1 to take remaining space */
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .large-text {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+            line-height: 1.2;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-section">
+        <div class="left-top">
+            Left Top Section
+        </div>
+        <div class="left-bottom">
+            Left Bottom Section
+        </div>
+    </div>
+
+    <div class="middle-section">
+        <div class="chat-area">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="chat-input-area">
+            <input type="text" class="chat-input" placeholder="Type your message...">
+            <button class="send-button">Send</button>
+        </div>
+    </div>
+
+    <div class="right-section">
+        <div class="large-text">
+            LUXEPRINTS PH<br>
+            TEST PAGE
+        </div>
+    </div>
+</body>
+    <link rel="stylesheet" href="style.css">
+</html>

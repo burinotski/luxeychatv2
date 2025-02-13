@@ -1,0 +1,84 @@
+:root {
+    --dark-bg: #1a1a1a;
+    --darker-bg: #0f0f0f;
+    --border-color: #333;
+    --text-color: #ffffff;
+    --input-bg: #2d2d2d;
+    --button-color: #4a4a4a;
+    --button-hover: #5a5a5a;
+    --accent-color: #007bff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+}
+
+.left-section {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--border-color);
+    background-color: var(--darker-bg);
+}
+
+.left-top {
+    height: 50%;
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px;
+}
+
+.left-bottom {
+    height: 50%;
+    padding: 10px;
+}
+
+.middle-section {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 1px solid var(--border-color);
+    background-color: var(--dark-bg);
+}
+
+.chat-area {
+    flex: 1;
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: var(--darker-bg);
+}
+
+.chat-input-area {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 4px;
+}
+
+.chat-input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.send-button {
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    trans
